@@ -36,6 +36,9 @@ void loop() {
     digitalWrite(waterRelay, HIGH); //Turn on water pump for 20 seconds
     delay(20000);
     digitalWrite(waterRelay, LOW); //Turn off water pump
+  }else{
+    digitalWrite(soapRelay, LOW);
+    digitalWrite(waterRelay, LOW);
   }
   
 }
