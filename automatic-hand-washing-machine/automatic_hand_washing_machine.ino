@@ -24,4 +24,11 @@ void loop() {
   digitalWrite(trig, HIGH);
   delayMicroseconds(10);
   digitalWrite(trig, LOW);
+  
+  duration = pulseIn(echo, HIGH);
+  distance = (duration/2) * (331.3/10000); //Speed of sound in air = 331.29 m/s
+  Serial.println(distance);
+  
+  if () {
+  
 }
