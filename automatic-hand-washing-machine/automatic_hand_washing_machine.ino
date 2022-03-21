@@ -1,6 +1,6 @@
 //Project Descriptions
 
-//Declaring constants and variables
+//Declaring pins and variables
 #define trig 5
 #define echo 4
 int waterRelay = 6;
