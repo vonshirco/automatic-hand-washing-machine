@@ -29,6 +29,13 @@ void loop() {
   distance = (duration/2) * (331.3/10000); //Speed of sound in air = 331.29 m/s
   Serial.println(distance);
   
-  if () {
+  if (distance > 1 && distance < 10) {
+    digitalWrite(soapRelay, HIGH); //Turn on soap pump for 4 seconds
+    delay(3000);
+    digitalWrite(soapRelay, LOW); //Turn off soap pump
+    digitalWrite(waterRelay, HIGH); //Turn on water pump for 20 seconds
+    delay(20000);
+    digitalWrite(waterRelay, LOW); //Turn off water pump
+  }
   
 }
