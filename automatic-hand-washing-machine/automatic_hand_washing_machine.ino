@@ -8,10 +8,13 @@ int soapRelay = 7;
 long duration;
 int distance;
 
-
 void setup() {
   // put your setup code here, to run once:
-
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+  pinMode(waterRelay, OUTPUT);
+  pinMode(soapRelay, OUTPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
